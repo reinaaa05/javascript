@@ -1,0 +1,17 @@
+// RPGのクリティカルヒットを再現
+// 比較演算子 == > < >= <= !=
+
+// スライムと戦っている。
+// 1から10の目のサイコロをふって、
+// 6未満：サイコロの目だけダメージを与えたと表示。
+// 6以上：クリティカルヒットとして、100のダメージを与えたと表示。
+
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var hit = parseInt(Math.random() * 10) + 1
+//console.log(hit);
+if ( hit < 6) {
+    console.log("スライムに、" + hit + "のダメージを与えた！");
+} else {
+    console.log("クリティカルヒット！スライムに" + hit + "のダメージを与えた！");
+}

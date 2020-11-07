@@ -1,0 +1,11 @@
+// 西暦年から平成年を求める
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var today = new Date();
+var seireki = today.getFullYear();
+
+var seireli = 2015 ;
+process.stdout.write("西暦" + seireki + "年は,")
+
+var heisei = seireli - 1988;
+console.log("平成" + heisei + "年です。");
