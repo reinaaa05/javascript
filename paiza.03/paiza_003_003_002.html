@@ -1,0 +1,10 @@
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+
+var hp = 30;
+while (hp > 0) {
+    let damage = Math.floor(Math.random() * 10);
+    console.log("スライムに" + damage + "のダメージを与えた");
+    hp -= damage;
+}
+console.log("スライムを倒した！");
