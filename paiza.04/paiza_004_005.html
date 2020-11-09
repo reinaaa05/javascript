@@ -1,0 +1,18 @@
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+// Your code here!
+
+var team = ["勇者", "戦士","魔法使い", "忍者"]
+
+
+for (var index = 0; index < team.length; index++) {
+    console.log(team[index]);
+}
+
+for (var index in team) {
+    console.log(team[index]);
+}
+
+for (var value of team) {
+    console.log(value);
+}

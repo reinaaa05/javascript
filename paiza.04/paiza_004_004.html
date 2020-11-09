@@ -1,0 +1,17 @@
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+// Your code here!
+
+var team = ["勇者", "戦士", "魔法使い"];
+
+team[3] = "遊び人";
+team[team.length] = "商人";
+team.push("狩人");
+
+team[1] = "格闘家";
+
+team[100] = "王様";
+
+console.log(team);
+console.log(team[0]);
+console.log(team.length);
